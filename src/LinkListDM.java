@@ -88,7 +88,8 @@ public class LinkListDM<E> implements LinkListableDM<E> {
         }
         return null;
     }
-
+// Пришлось дважды переопределять и инициировать в "своем" интерфейсе toString()
+// так как по другому не работало.
     @Override
     public String toString(LinkListDM<E> e) {
         StringBuilder sb = new StringBuilder();
